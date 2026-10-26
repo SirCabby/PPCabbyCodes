@@ -1,0 +1,16 @@
+# Copy this file to config.mk and set your local paths.
+#   cp config.mk.example config.mk
+# config.mk is gitignored, so your personal values never enter the repo.
+
+# Absolute path to your Papers, Please folder - the directory containing the
+# "PapersPlease" executable and "PapersPlease_Data". Do not quote it here.
+# Linux example: GAME_DIR := /home/you/.local/share/Steam/steamapps/common/PapersPlease
+GAME_DIR := /path/to/PapersPlease
+
+# Optional: a copy of the Windows version (the folder with PapersPlease.exe),
+# where `make install` puts the Windows build (version.dll) and which
+# `WIN=1 tools/headless.sh` runs under Wine. Steam's console downloads one
+# beside a Linux install, leaving that install alone:
+#   download_depot 239030 239031
+# Example: WIN_GAME_DIR := /home/you/.local/share/Steam/ubuntu12_32/steamapps/content/app_239030/depot_239031
+WIN_GAME_DIR :=

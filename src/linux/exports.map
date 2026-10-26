@@ -1,0 +1,5 @@
+/* The mod exports nothing: Unity only dlopens it. Template instantiations from
+   the standard headers would otherwise be exported with default visibility. */
+{
+  local: *;
+};
